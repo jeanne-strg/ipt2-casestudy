@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="portfolio-container">
+            <div class="portfolio-row header-wrap">
+                <div class="brand-name">
+                    <a href="#" class="logo">My Portfolio</a>
+                </div>
+                <div class="portfolio-navbar">
+                    <ul>
+                        <li>
+                            <a href="#about" class="navbar-link">Home</a>
+                        </li>
+                        <li>
+                            <a href="#resume" class="navbar-link">About Me</a>
+                        </li>
+                        <li>
+                            <a href="#projects" class="navbar-link">Hobbies</a>
+                        </li>
+                        
+                    </ul>   
+                </div>
+               
+                <div class="navbar-toggle">
+                    <i class="lni lni-grid-alt"></i>
+                </div>
+                <button type="button" class="theme-toggle">
+                    <i class="lni lni-night"></i>
+                    <i class="lni lni-sun"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <section id="about">
+        <div class="portfolio-container">
+            <div class="portfolio-row about-content">
+                <!------ Greetings and Introduction Begins ------>
+                <div class="about-intro">
+                    <div class="about-text">
+                        <h1 style="color: blue;"><strong>Hay' I'm Micaela</strong><br>
+                    
+                        <h3>User Interface</h3>
+                        <p>Passionate web developer crafting captivating online experiences. 
+                            Expert in coding, UI/UX design, and problem-solving.
+                             Code enthusiast, coffee lover, always learning.</p>
+                    </div>
+                </div>
+
+                <div class="about-image">
+                    <!------ sa src ka maglagay ng pic ------>
+                    <img src="img/profile.jpg" alt="profile">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="resume">
+        <div class="portfolio-container">
+            <div class="portfolio-row">
+                <div class="resume-intro">
+                    <h2><strong>About me</strong></h2>
+                    <div class="resume-text">
+                        <p>
+                            Hello World!, I’m Micaela Salak! As a passionate designer with a growing interest in web development, 
+                            I love creating captivating online experiences. My expertise lies in UI/UX design, where I focus on 
+                            blending aesthetics with functionality to craft seamless user interfaces. While design is my strength, 
+                            I'm also building my coding skills, eager to merge creativity with technical problem-solving.
+                        </p>
+                        <br>
+                        <p>
+                            I'm constantly learning, fueled by a love for coffee and curiosity for the latest in design and development trends.
+                             Feel free to explore my portfolio and get in touch for any creative collaborations
+                        </p>
+                        
+                    </div>
+                </div>
+            
+                <div class="resume-body">
+                    <h2><strong>Qualification</strong></h2>
+                    <div class="resume-heading">
+                        <button class="btn active" type="button" data-id="education">
+                            education
+                        </button>
+                        <button class="btn" type="button" data-id="experience">
+                            experience
+                        </button>
+                        <button class="btn" type="button" data-id="skills">
+                            skills
+                        </button>
+                    </div>
+
+                    <!------ Education Tabs------>
+                    <div class="resume-tab active" id="education">
+                        <div class="qualification-content">
+                            <h4 class="course">Primary School</h4>
+                            <h6 class="institution">Manga Elementary School</h6>
+                            <span class="years">2014-2015</span>
+                        </div>
+                        <div class="qualification-content">
+                            <h4 class="course">Secondary School</h4>
+                            <h6 class="institution">Junior High</h6>
+                            <h6 class="institution">Capas National High School</h6>
+                            <span class="years">2018-2019</span> <br>
+                            <h6 class="institution">Senior High</h6>
+                            <h6 class="institution">St. Nicole Technical School</h6>
+                            <span class="years">2019-2021</span>
+                        </div>
+                        <div class="qualification-content">
+                            <h4 class="course">Tertiary </h4>
+                            <h6 class="institution">Tarlac State University, <br>
+                                 Bachelor of Science in Information Technology Major in Web and Application </h6>
+                            <span class="years">2021-2025</span>
+                        </div>
+                    </div>   
+                    <!--- experience tabs--->
+                    <div class="resume-tab" id="experience">
+                        <div class="qualification-content">
+                            <h4 class="role">Barista</h4>
+                            <h6 class="organization">2n1 Cafe</h6>
+                            <span class="years">2021-2024</span>
+                        </div>
+                        <div class="qualification-content">
+                            <h4 class="role">Apprentice</h4>
+                            <h6 class="organization">SSITE</h6>
+                            <span class="years">2024-2025</span>
+                        </div>
+                        <div class="qualification-content">
+                            <h4 class="role">Adobe Illustrator Workshop Attendee</h4>
+                            <h6 class="organization">Webinar</h6>
+                            <span class="years">2024</span>
+                        </div>
+                        
+                    </div>
+                    <div class="resume-tab" id="skills">
+                        <div class="bar-content">
+                            <div class="bar-heading">
+                                <div class="bar-title">
+                                    UI/UX Design
+                                </div>
+                                <div class="bar-percentage">
+                                    80%
+                                </div>
+                            </div>
+                            <div class="bar-progress">
+                                <div class="progress-bar" style=" width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="bar-content">
+                            <div class="bar-heading">
+                                <div class="bar-title">
+                                    Front End Developer
+                                </div>
+                                <div class="bar-percentage">
+                                    80%
+                                </div>
+                            </div>
+                            <div class="bar-progress">
+                                <div class="progress-bar" style=" width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="bar-content">
+                            <div class="bar-heading">
+                                <div class="bar-title">
+                                    Back End Developer
+                                </div>
+                                <div class="bar-percentage">
+                                    60%
+                                </div>
+                            </div>
+                            <div class="bar-progress">
+                                <div class="progress-bar" style=" width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                </div>
+            </div>
+    </section>
+   
+
+    <section id="projects">
+        <div class="portfolio-container">
+            <div class="portfolio-row filter-wrap">
+                <h2><strong>Hobbies</strong></h2>
+                <div class="portfolio-filter-nav">
+                    <button class="btn active" data-id="all" type="button">All</button>
+                    <button class="btn active" data-id="design" type="button">Self Reward</button>
+                    <button class="btn active" data-id="development" type="button">Work Hobbies</button>
+                </div>
+            </div>
+
+            <div class="portfolio-wrapper">
+                <div class="portfolio-col">
+                    <div class="portfolio-item design">
+                        <img src="img/music.jpg" alt="">
+                        <div class="portfolio-item-content">
+                            <h4>I love listening a music</h4>
+                            <p>Music is my therapy!</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item development">
+                        <img src="img/coding.jpg" alt="">
+                            <div class="portfolio-item-content">
+                                <div class="product-title">
+                                    <h4>Coding</h4>
+                                    <p>Practicing and making a masterpiece!</p>
+                                </div>
+                            </div>
+                    </div>
+                </div> 
+                <div class="portfolio-col">
+                    <div class="portfolio-item development">
+                        <img src="img/cleaning.jpg" alt="">
+                            <div class="portfolio-item-content">
+                                <div class="product-title">
+                                    <h4>Cleaning</h4>
+                                    <p>i want smooth!</p>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="portfolio-item design">
+                        <img src="img/reading a book.jpg" alt="">
+                        <div class="portfolio-item-content">
+                            <div class="product-title">
+                                <h4>Reading a Book</h4>
+                                <p>is a gift that can you open again and again.</p>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+                <div class="portfolio-col">
+                    <div class="portfolio-item development">
+                        <img src="img/working.jpg" alt="">
+                        <div class="portfolio-item-content">
+                            <div class="product-title">
+                                <h4>Being Barista</h4>
+                                <p>A Experience for making any kind of coffee!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item design">
+                        <img src="img/socem.jpg" alt="">
+                        <div class="portfolio-item-content">
+                            <div class="product-title">
+                                <h4>Scrolling in SocEm</h4>
+                                <p>give me a little break!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-col">
+                    <div class="portfolio-item development">
+                        <img src="img/Making coffee.jpg" alt="">
+                        <div class="portfolio-item-content">
+                            <div class="product-title">
+                                <h4>Making a Coffee</h4>
+                                <p>enjoying making different coffees.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item design">
+                        <img src="img/matchaaa.jpg" alt="">
+                        <div class="portfolio-item-content">
+                            <div class="product-title">
+                                <h4>Matcha</h4>
+                                <p>My favorite Comfort drink.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="portfolio-container">
+            <div class="portfolio-row footer-wrap">
+
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
