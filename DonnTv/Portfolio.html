@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sci-Fi Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Orbitron', sans-serif;
+            background-color: #0d0d0d;
+            color: #00ffcc;
+            overflow-x: hidden;
+        }
+
+        /* Navbar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #111;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav img {
+            width: 60px;
+        }
+
+        .menu a {
+            color: #00ffcc;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2rem;
+            position: relative;
+        }
+
+        .menu a:hover {
+            color: #ffffff;
+        }
+
+        .menu a:before {
+            content: "";
+            position: absolute;
+            width: 0%;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: #00ffcc;
+            transition: 0.5s ease;
+        }
+
+        .menu a:hover:before {
+            width: 100%;
+        }
+
+        /* Header Section */
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-image: url('your-background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #fff;
+            padding-top: 80px; /* Space for fixed nav */
+        }
+
+        header h1 {
+            font-size: 4.5rem;
+            letter-spacing: 10px;
+            text-shadow: 0 0 20px #00ffcc;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            text-shadow: 0 0 10px #00ffcc;
+            margin-bottom: 30px;
+        }
+
+        /* Animated button */
+        .cta-btn {
+            padding: 15px 40px;
+            background-color: transparent;
+            border: 2px solid #00ffcc;
+            color: #00ffcc;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            transition: color 0.4s ease;
+        }
+
+        .cta-btn:hover {
+            color: #000;
+        }
+
+        .cta-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #00ffcc;
+            transition: 0.6s ease-in-out;
+            transform: scaleX(0);
+            transform-origin: left;
+        }
+
+        .cta-btn:hover::before {
+            transform: scaleX(1);
+        }
+
+        .cta-description {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            max-width: 600px;
+            line-height: 1.5;
+            text-align: center;
+        }
+
+        /* Portfolio Section */
+        section {
+            padding: 100px 0;
+            text-align: center;
+            background-color: #111;
+        }
+
+        section h2 {
+            font-size: 3rem;
+            margin-bottom: 50px;
+            color: #00ffcc;
+        }
+
+        .portfolio-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .portfolio-item {
+            width: 320px;
+            height: 220px;
+            background-color: #222;
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: opacity 0.5s ease;
+        }
+
+        .portfolio-item:hover img {
+            opacity: 0.3;
+        }
+
+        .portfolio-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px #00ffcc;
+        }
+
+        .portfolio-item h3 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #00ffcc;
+            font-size: 1.5rem;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .portfolio-item:hover h3 {
+            opacity: 1;
+        }
+
+        /* Footer */
+        footer {
+            padding: 20px;
+            text-align: center;
+            background-color: #111;
+        }
+
+        footer p {
+            font-size: 1rem;
+            color: #00ffcc;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <img src="C:\Users\DONN\Downloads\20240117_145508.png" alt="Logo">
+        <div class="menu">
+            <a href="#home">Home</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header id="home">
+        <h1>DonnWorks</h1>
+        <p>Freelance photographer.</p>
+        <button class="cta-btn">Discover More</button>
+        <p class="cta-description">Donn is a talented freelance photographer known for his captivating and diverse portfolio. He specializes in various photography genres, including portraits, events, and landscapes. Donn’s keen eye for detail and creative approach allow him to capture unique and memorable moments for his clients. Whether working on a personal project or a commercial assignment, Donn consistently delivers high-quality images that tell a compelling story. His passion for photography and dedication to his craft make him a sought-after professional in the industry.</p>
+    </header>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2>My Works</h2>
+        <div class="portfolio-gallery">
+            <div class="portfolio-item">
+                <img src="C:\Users\DONN\Downloads\IMG_3971.jpg" alt="Project 1">
+                <h3>Wedding</h3>
+            </div>
+            <div class="portfolio-item">
+                <img src="C:\Users\DONN\Downloads\IMG_5482.jpg" alt="Project 2">
+                <h3>Prenup</h3>
+            </div>
+            <div class="portfolio-item">
+                <img src="C:\Users\DONN\Downloads\IMG_1547.jpg" alt="Project 3">
+                <h3>Pre-Debut</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>&copy; 2024 My photography Portfolio. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #0a0e1f, #1e1e2f);
+    color: #e0e0e0;
+    overflow-x: hidden;
+}
+
+header {
+    background: rgba(255, 255, 255, 0.1);
+    color: #00ffcc;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.logo img {
+    width: 100px; /* Adjust logo size */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #00ffcc;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff007f;
+    text-shadow: 0 0 10px #ff007f, 0 0 20px #ff007f;
+}
+
+section {
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 255, 204, 0.5);
+    position: relative;
+    z-index: 1;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #00ffcc;
+    text-shadow: 0 0 10px #00ffcc;
+}
+
+.section-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, 
+form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #00ffcc;
+    border-radius: 4px;
+    font-size: 16px;
+    background: rgba(0, 0, 0, 0.3);
+    color: #e0e0e0;
+}
+
+button {
+    padding: 10px;
+    background: linear-gradient(135deg, #00ffcc, #ff007f);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #ff007f, #00ffcc);
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: rgba(255, 255, 255, 0.1);
+    color: #00ffcc;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    section {
+        margin: 10px;
+    }
+}
