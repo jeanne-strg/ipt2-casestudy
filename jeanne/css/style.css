@@ -56,7 +56,7 @@ body {
 
 .header.sticky {
     background: var(--bg-color);
-    box-shadow: 0 .1rem 1rem var(--shadow-color);
+
 }
 
 .logo {
@@ -97,16 +97,6 @@ body {
     opacity: .7;
 }
 
-#darkMode-icon {
-    font-size: 2.4rem;
-    color: var(--white-color);
-    cursor: pointer;
-}
-
-.header.sticky #darkMode-icon {
-    color: var(--text-color);
-    opacity: .9;
-}
 
 #menu-icon {
     font-size: 3.6rem;
@@ -116,6 +106,11 @@ body {
 
 section {
     min-height: 100vh;
+    padding: 10rem 7% 2rem;
+}
+
+section.about {
+    min-height: 50vh;
     padding: 10rem 7% 2rem;
 }
 
@@ -162,7 +157,7 @@ section {
 
 .home-content .social-media a:hover {
     background: var(--main-color);
-    color: var(--white-color);
+    color: var(--main-color);
 }
 
 .btn {
@@ -185,112 +180,12 @@ section {
     border-color: var(--main-color);
 }
 
-.home .profession-container {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    pointer-events: none;
-}
 
-.home .profession-container .profession-box {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 768px;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: professionRotate 13s ease-out infinite;
-}
-
-@keyframes professionRotate {
-
-    0%,
-    20% {
-        transform: rotate(0deg);
-    }
-
-    25%,
-    45% {
-        transform: rotate(-90deg);
-    }
-
-    50%,
-    70% {
-        transform: rotate(-180deg);
-    }
-
-    75%,
-    95% {
-        transform: rotate(-270deg);
-    }
-
-    100% {
-        transform: rotate(-360deg);
-    }
-}
-
-.home .profession-box .profession {
-    position: absolute;
-    left: 0;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    color: var(--main-color);
-    transform: rotate(calc(360deg / 4 * var(--i)));
-    transform-origin: 384px;
-    background: var(--bg-color);
-    padding: 13px 0;
-}
-
-.home .profession-box .profession:nth-child(1) i {
-    margin-right: 15px;
-}
-
-.home .profession-box .profession:nth-child(2),
-.home .profession-box .profession:nth-child(4) {
-    padding-bottom: 20px;
-}
-
-.home .profession i {
-    font-size: 3.8rem;
-}
-
-.home .profession h3 {
-    font-size: 3.2rem;
-    line-height: 1;
-    font-weight: 600;
-}
-
-.home .profession-box .circle {
-    width: 560px;
-    height: 560px;
-    border: 3px solid var(--main-color);
-    border-radius: 50%;
-    z-index: -1;
-}
-
-.home .profession-container .overlay {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 0;
-    height: 0;
-    border-top: 50vh solid var(--main-color);
-    border-right: 384px solid var(--main-color);
-    border-bottom: 50vh solid var(--main-color);
-    border-left: 384px solid transparent;
-}
 
 .home-img img {
     position: absolute;
-    bottom: 30%;
-    right: 10%;
+    bottom: 15%;
+    right: 20%;
     pointer-events: none;
     max-width: 480px;
     max-height: 100vh;
@@ -305,22 +200,20 @@ span {
 
 /* ----------ABOUT---------- */
 #about {
-    padding: 80px 0px;
+    padding: 0px 0px;
     color: #ababab;
-}
-
-.row {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .about-col-1 {
-    flex-basis: 35%;
+    flex-basis: 0%;
+    
 }
 
 .about-col-1 img {
-    width: 100%;
+    width: 50%;
     border-radius: 15px;
 }
 
@@ -843,19 +736,6 @@ width: 100%;
         width: 70vw;
         margin-top: -2rem;
     }
-
-    .testimonial-container .testimonial-wrapper {
-        padding: 5rem 0;
-    }
-
-    .testimonial-content .testimonial-slide {
-        padding: 3rem 2rem;
-    }
-
-    .testimonial-box .swiper-button-next,
-    .testimonial-box .swiper-button-prev {
-        display: none;
-    }
 }
 
 @media (max-width: 580px) {
@@ -867,30 +747,6 @@ width: 100%;
 @media (max-width: 450px) {
     html {
         font-size: 50%;
-    }
-
-    #darkMode-icon {
-        right: 6rem;
-    }
-
-    .home .profession-box .profession:nth-child(1) {
-        transform: rotate(-90deg) translate(-110px, -220px);
-    }
-
-    .home .profession-box .profession:nth-child(2) {
-        transform: rotate(0deg) translate(5px, -325px);
-    }
-
-    .home .profession-box .profession:nth-child(3) {
-        transform: rotate(90deg) translate(-105px, -440px);
-    }
-
-    .home .profession-box .profession:nth-child(4) {
-        transform: rotate(180deg) translate(-210px, -325px);
-    }
-
-    .home .profession-container .overlay {
-        top: 80rem;
     }
 
     .contact form .input-box input {
