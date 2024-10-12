@@ -5,45 +5,189 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IPT2 Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <title>Jayson</title>
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+
+    <!-- header design -->
     <header class="header">
-        <a href="#" class="logo">JAB</a>
+        <a href="#" class="logo">Jayson</a>
+
         <nav class="navbar">
-            <a href="#" class="active">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Contact</a>
+            <a class="link" href="#home" class="active">Home</a>
+            <a class="link" href="#about">About</a>
+            <a class="link" href="#services">Services</a>
+            <a class="link" href="#portfolio">Projects</a>
+            <a href="#contact" class="btn">Hire me</a>
         </nav>
+
+        <!-- <div class="bx bx-moon" id="darkMode-icon"></div>
+
+        <div class="bx bx-menu" id="menu-icon"></div>-->
     </header>
 
-    <section class="home">
+    <!-- home section design -->
+    <section class="home" id="home">
         <div class="home-content">
-            <h1>Hi, I'm Jayson Bengson</h1>
-            <h3>Football Enthusiast</h3>
-            <p>Jayson Bengson is a dedicated football player who has faced numerous injuries and fracture throughout his journey in the sport. 
-                Despite these challenges, his passion for Football remains unwavering. 
-                For Bengson, Football isn't just a sport—it's a big part of his life. 
-                His resilience and love for the sport continue to drive him forward, both on and off the field.
-                Bengson is also a Tough Defender if you want to live more you must go away.</p>
-            <div class="btn-box">
-                <a href="#">Defender</a>
-                <a href="#">Keeper</a>
+            <h3>Hi, I am</h3>
+            <h1><span>Jayson</span></h1>
+            <p>
+                Jayson Bengson is a dedicated football player who has faced numerous injuries and fracture throughout his journey in the sport. Despite these challenges, his passion for Football remains unwavering. 
+            </p>
+            <p>For Bengson, Football isn't just a sport—it's a big part of his life. His resilience and love for the sport continue to drive him forward, both on and off the field. Bengson is also a Tough Defender if you want to live more you must go away.</p>
+
+            <div class="social-media">
+                <a href="https://www.facebook.com/"><i class='bx bxl-facebook'></i></a>
+                <a href="https://twitter.com/"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.instagram.com/"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://www.linkedin.com/login"><i class='bx bxl-linkedin'></i></a>
             </div>
-        </div>
-        <div class="home-image">
-            <img src="jayson.png" alt="Home Image"/>
-        </div>
-        <div class="home-sci">
-            <a href="#"><i class='bx bxl-facebook'></i></a>
-            <a href="#"><i class='bx bxl-twitter'></i></a>
-            <a href="#"><i class='bx bxl-instagram'></i></a>
+
+            <a href="" class="btn">Download CV</a>
+
+        <div class="home-img">
+            <img src="images/jayson.png" alt="">
         </div>
     </section>
+
+    <!-- about section design -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/jayson1.png" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <p>
+                Hi there, welcome to my website! I am Jayson Bengson, a passionate web developer who enjoy learning new technologies and solving problems with code!
+            </p>
+            <p>
+                This website is my personal blog where I share my ideas about web development tips and design.
+            </p>
+            <p>
+                Thank you for visiting my website and getting to know me better, I hope you learned something from me and enjoy exploring your own creativity. Visit me regularly for more updates, tips and designs. If you have any feedback and suggestions, I am pleased to know about it.
+            </p>
+            <!-- <a href="#" class="btn">Read More</a> -->
+        </div>
+    </section>
+
+    <!-- services section design -->
+    <section class="services" id="services">
+        <h2 class="heading">Our <span>Services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web Development</h3>
+                <p>Maximize brand impact and growth through data-driven strategies across diverse digital channels</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bxs-paint'></i>
+                <h3>UX/UI Design</h3>
+                <p>Crafting visually captivating and functional websites tailored to your brand's identity and audience engagement.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-bar-chart-alt'></i>
+                <h3>Digital Marketing</h3>
+                <p>Maximize brand impact and growth through data-driven strategies across diverse digital channels.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- portfolio section design -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Project</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="images/taskmaster.jpg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>TaskMaster</h4>
+                    <p>A sleek task management app that helps users create, organize, and track daily tasks with prioritization features.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/fittrack.jpg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>FitTrack</h4>
+                    <p>A fitness tracking app that logs workouts, tracks progress, and provides personalized workout recommendations.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/recipe.jpg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>RecipeMaster</h4>
+                    <p>A recipe app that allows users to browse, save, and create their own recipes with a meal planning and shopping list feature.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/ecogrow.jpg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>EcoGrow Marketplace</h4>
+                    <p>An e-commerce platform enabling users to buy and sell organic produce and eco-friendly products, emphasizing sustainable living.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/travel.jpg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>TravelBuddy Connect</h4>
+                    <p>A social networking platform connecting travelers worldwide, facilitating itinerary sharing, travel tips, and fostering a community-driven travel experience.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/crypto.jpg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>CryptoTracker</h4>
+                    <p>An interactive real-time cryptocurrency tracker that provides comprehensive data visualization and analytics for various digital assets.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Us!</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="tel" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
 </body>
+
 </html>
